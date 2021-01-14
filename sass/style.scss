@@ -1,0 +1,189 @@
+/* Variables */
+
+$color-light: #b8e994;
+$color-dark: #F97F51;
+$color-main: #60a3bc;
+$color-detal: #e9ca1b;
+$font-text: 'Open Sans',
+arial,
+sans-serif;
+$font-header: 'roboto',
+arial,
+sans-serif;
+$font-color: #fff;
+$font-dark-color: #1d1d1d;
+$transition: all .6s;
+
+// global//
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+body {
+    font-family: $font-text;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.section {
+    padding: 108px auto;
+}
+
+/* navbar */
+
+.navigation {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: transparent;
+    text-align: right;
+    padding: 50px 100px 0 0;
+    z-index: 1;
+
+    p {
+        position: absolute;
+        top: 15px;
+        left: 100px;
+        font-size: 22px;
+        font-weight: 400;
+        color: $color-detal;
+
+        span {
+            color: $font-color
+        }
+    }
+
+    a {
+        color: $font-color;
+        text-transform: uppercase;
+        font-family: $font-text;
+        text-decoration: none;
+        padding: 0 25px;
+        transition: $transition;
+        transform: scale(1);
+
+        &:hover {
+            color: $color-detal;
+            transform: scale(1.5);
+        }
+    }
+
+    i {
+        padding: 0 5px;
+        ;
+        cursor: pointer;
+        transition: $transition;
+        transform: scale(1);
+
+        &:hover {
+            color: $color-detal;
+            transform: scale(1.5);
+        }
+    }
+}
+
+/* splash */
+
+.splash {
+    height: 45vh;
+    width: 100%;
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/5973908/pexels-photo-5973908.jpeg?cs=srgb&dl=pexels-ono-kosuki-5973908.jpg&fm=jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .header-title {
+        font-size: 56px;
+        line-height: 56px;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: $font-header;
+        font-weight: 500;
+        margin: 20px 0px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .header-subtitle {
+        font-family: $font-text;
+        font-weight: 300;
+        text-align: center;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .btn {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $font-color;
+        padding: 12px 50px;
+        font-size: 22px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: $color-detal;
+        cursor: pointer;
+        transition: $transition;
+    }
+}
+
+/* SERVICES */
+.services {
+    color: black;
+
+    .page-title {
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: $font-header;
+        font-weight: 500;
+        margin: 20px 0px;
+    }
+
+    .page-subtitle {
+        font-family: $font-text;
+        font-weight: 300;
+        text-align: center;
+        line-height: 16px;
+    }
+}

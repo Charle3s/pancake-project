@@ -1,0 +1,171 @@
+/* Variables */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+body {
+  font-family: "Open Sans", arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.section {
+  padding: 108px auto;
+}
+
+/* navbar */
+.navigation {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  background-color: transparent;
+  text-align: right;
+  padding: 50px 100px 0 0;
+  z-index: 1;
+}
+
+.navigation p {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #e9ca1b;
+}
+
+.navigation p span {
+  color: #fff;
+}
+
+.navigation a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Open Sans", arial, sans-serif;
+  text-decoration: none;
+  padding: 0 25px;
+  transition: all 0.6s;
+  transform: scale(1);
+}
+
+.navigation a:hover {
+  color: #e9ca1b;
+  transform: scale(1.5);
+}
+
+.navigation i {
+  padding: 0 5px;
+  cursor: pointer;
+  transition: all 0.6s;
+  transform: scale(1);
+}
+
+.navigation i:hover {
+  color: #e9ca1b;
+  transform: scale(1.5);
+}
+
+/* splash */
+.splash {
+  height: 45vh;
+  width: 100%;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/5973908/pexels-photo-5973908.jpeg?cs=srgb&dl=pexels-ono-kosuki-5973908.jpg&fm=jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash-inner .header-title {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "roboto", arial, sans-serif;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+.splash-inner .header-title span {
+  font-weight: bold;
+}
+
+.splash-inner .header-subtitle {
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.splash-inner .btn {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 12px 50px;
+  font-size: 22px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #e9ca1b;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+/* SERVICES */
+.services {
+  color: black;
+}
+
+.services .page-title {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "roboto", arial, sans-serif;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+.services .page-subtitle {
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  line-height: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
