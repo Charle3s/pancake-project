@@ -46,7 +46,7 @@ body {
   left: 100px;
   font-size: 22px;
   font-weight: 400;
-  color: #e9ca1b;
+  color: #fac02e;
 }
 
 .navigation p span {
@@ -64,7 +64,7 @@ body {
 }
 
 .navigation a:hover {
-  color: #e9ca1b;
+  color: #fac02e;
   transform: scale(1.5);
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .navigation i:hover {
-  color: #e9ca1b;
+  color: #fac02e;
   transform: scale(1.5);
 }
 
@@ -141,31 +141,74 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   border-radius: 5px;
-  background-color: #e9ca1b;
+  background-color: #fac02e;
   cursor: pointer;
   transition: all 0.6s;
 }
 
-/* SERVICES */
+/* services */
 .services {
-  color: black;
+  margin-top: 5vh;
+  color: #1d1d1d;
+  height: 30vh;
 }
 
 .services .page-title {
-  font-size: 26px;
-  line-height: 26px;
-  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
   text-transform: uppercase;
   font-family: "roboto", arial, sans-serif;
-  font-weight: 500;
-  margin: 20px 0px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .services .page-subtitle {
+  color: gray;
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 300;
+  letter-spacing: -0.5px;
   text-align: center;
   line-height: 16px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper .service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333%;
+  height: 300px;
+}
+
+.wrapper .service-box .box-subtitle {
+  font-family: "roboto", arial, sans-serif;
+  font-weight: 800;
+  color: #1d1d1d;
+  margin-bottom: 0;
+}
+
+.wrapper .service-box p {
+  color: gray;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.wrapper i {
+  font-size: 30px;
+  line-height: 55px;
+  height: 55px;
+  width: 55px;
+  color: #fac02e;
+  border: 2px solid #fac02e;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
