@@ -153,7 +153,7 @@ body {
   height: 30vh;
 }
 
-.services .page-title {
+.page-title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -162,7 +162,7 @@ body {
   margin-bottom: 0;
 }
 
-.services .page-subtitle {
+.page-subtitle {
   color: gray;
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 300;
@@ -179,7 +179,7 @@ body {
   align-items: center;
 }
 
-.wrapper .service-box {
+.wrapper .main-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,14 +188,14 @@ body {
   height: 300px;
 }
 
-.wrapper .service-box .box-subtitle {
+.wrapper .main-box .box-subtitle {
   font-family: "roboto", arial, sans-serif;
   font-weight: 800;
   color: #1d1d1d;
   margin-bottom: 0;
 }
 
-.wrapper .service-box p {
+.wrapper .main-box p {
   color: gray;
   line-height: 20px;
   font-weight: 300;
@@ -209,6 +209,31 @@ body {
   color: #fac02e;
   border: 2px solid #fac02e;
   border-radius: 50%;
+}
+
+/* portfolio */
+.portfolio {
+  padding: 100px;
+  height: 80vh;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.portfolio .wrapper {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.portfolio .main-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 45%;
+  background-color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -169,26 +169,26 @@ body {
     margin-top: 5vh;
     color: $font-dark-color;
     height: 30vh;
+}
 
-    .page-title {
-        font-size: 30px;
-        line-height: 30px;
-        text-transform: uppercase;
-        font-family: $font-header;
-        font-weight: 600;
-        margin-bottom: 0;
-    }
+.page-title {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: $font-header;
+    font-weight: 600;
+    margin-bottom: 0;
+}
 
-    .page-subtitle {
-        color: gray;
-        font-family: $font-text;
-        font-weight: 300;
-        letter-spacing: -0.5px;
-        text-align: center;
-        line-height: 16px;
-        margin-top: 10px;
-        margin-bottom: 35px;
-    }
+.page-subtitle {
+    color: gray;
+    font-family: $font-text;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 35px;
 }
 
 .wrapper {
@@ -196,7 +196,7 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    .service-box {
+    .main-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -227,5 +227,31 @@ body {
         // padding: 10px;
         border: 2px solid $color-detal;
         border-radius: 50%;
+    }
+}
+
+/* portfolio */
+
+.portfolio {
+    padding: 100px;
+    height: 80vh;
+    color: black;
+    background-color: rgb(245, 245, 245);
+
+    .wrapper {
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 45%;
+        background-color: blue;
     }
 }
