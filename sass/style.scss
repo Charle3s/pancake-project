@@ -190,7 +190,7 @@ body {
     text-align: center;
     line-height: 16px;
     margin-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 7%;
 }
 
 .wrapper {
@@ -236,9 +236,13 @@ body {
 
 .portfolio {
     padding: 100px;
-    height: 80vh;
+    height: 77vh;
     color: black;
     background-color: rgb(245, 245, 245);
+
+    h1 {
+        margin: 0;
+    }
 
     .wrapper {
         height: 50vh;
@@ -254,8 +258,14 @@ body {
         align-items: center;
         justify-content: flex-start;
         width: 30%;
-        height: 45%;
+        height: 49%;
         background-color: $font-color;
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            margin-top: 5%;
+        }
 
         img {
             height: 80%;
