@@ -310,4 +310,98 @@ body {
   color: #fac02e;
 }
 
+/* ---> MEDIA QUERIES <---- */
+/*small devices*/
+@media only screen and (max-width: 601px) {
+  .navigation p {
+    top: -50%;
+    left: 15%;
+    font-size: 15px;
+  }
+  .navigation a {
+    padding: 0 7px;
+  }
+  .navigation a i {
+    padding: 0 5px;
+    cursor: pointer;
+    transition: all 0.6s;
+    transform: scale(1);
+  }
+  .splash {
+    background-image: url("https://images.pexels.com/photos/5973961/pexels-photo-5973961.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: 50% -10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .splash .btn {
+    top: 100%;
+    padding: 7.5px 20px;
+    font-size: 14px;
+  }
+  .services {
+    margin-top: 7vh;
+    margin-bottom: 25vh;
+  }
+  .portfolio {
+    height: 85vh;
+  }
+  .portfolio .subtitle {
+    font-size: 9px;
+  }
+  .portfolio .subtitle p {
+    font-size: 9px;
+  }
+  .footer p {
+    font-size: 9px;
+  }
+}
+
+/*medium devices*/
+@media only screen and (min-width: 768px) {
+  .navigation p {
+    left: 10%;
+    font-size: 16px;
+  }
+  .splash {
+    background-image: url("https://images.pexels.com/photos/5973961/pexels-photo-5973961.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: 50% -20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .splash .btn {
+    position: absolute;
+    top: 105%;
+    padding: 7.5px 20px;
+    font-size: 16px;
+    background-color: #fac02e;
+    cursor: pointer;
+  }
+  .services {
+    margin-top: 7vh;
+    margin-bottom: 15vh;
+  }
+  .portfolio .subtitle {
+    font-size: 10px;
+  }
+  .portfolio .subtitle .box-subtitle {
+    font-size: 13px;
+  }
+}
+
+/*large devices*/
+@media only screen and (min-width: 992px) {
+  .splash {
+    background-image: url("https://images.pexels.com/photos/5973961/pexels-photo-5973961.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: 50% -20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .services {
+    margin-bottom: 5vh;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
